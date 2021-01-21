@@ -1,0 +1,30 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Post ID</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="PostID"
+        placeholder="Post ID">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Post</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Posts"
+        placeholder="Post">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Student ID</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="StudentID"
+        placeholder="Student ID">
+    </div>
+
+
+
+</div>
+
+<button (click)="addPost()" *ngIf="Pst.PostID==0" class="btn btn=primary">
+    Add
+</button>
+
+<button (click)="updatePost()" *ngIf="Pst.PostId!=0" class="btn btn=primary">
+    Update
+</button>

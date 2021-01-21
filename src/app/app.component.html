@@ -1,0 +1,24 @@
+<div class="container">
+
+<h3 class= "d-flex justify-content-center">Angular 11,Web API, SQL Server APP </h3>
+<h5 class= "d-flex justify-content-center">Student management portal </h5>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <button routerLink="login"
+      class="m-1 btn btn-light btn-outline-primary" Button>Login</button>
+    </li>
+    <li class="nav-item">
+      <button [routerLink]="['student']" routerLinkActive="active" 
+      class="m-1 btn btn-light btn-outline-primary" Button>Student</button>
+    </li>
+    <li class="nav-item">
+      <button routerLink="post"
+      class="m-1 btn btn-light btn-outline-primary" Button>Post</button>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,36 @@
+<div class="form-froup row">
+    <label class="col-sm-2 col-form-label">Student Id</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="StudentId"
+        placeholder="Enter Student Id">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Student Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Name"
+        placeholder="Enter Student Name">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Student Class Year</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="ClassYear"
+        placeholder="Enter Student Class Year">
+    </div>
+
+    <label class="col-sm-2 col-form-label">Student Status</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Status"
+        placeholder="Enter Student Status">
+    </div>
+
+
+</div>
+
+<button (click)="addStudent()" *ngIf="stud.StudentId==0" class="btn btn=primary">
+    Add
+</button>
+
+<button (click)="updateStudent()" *ngIf="stud.StudentId!=0" class="btn btn=primary">
+    Update
+</button>
+
